@@ -74,7 +74,7 @@ class SRTSplitterGUI:
         ttk.Button(dir_frame, text="Examinar", command=self.browse_output_dir).pack(side='right', padx=5)
         
         # Botón unir
-        ttk.Button(merge_frame, text="Unir archivos", command=self.merge_files).pack(pady=10)
+        ttk.Button(merge_frame, text="Unir archivos", command=self.merge_files).pack(pady=10, padx=5)
 
     def browse_input_file(self):
         filename = filedialog.askopenfilename(
